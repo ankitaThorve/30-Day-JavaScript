@@ -9,3 +9,18 @@ if (time < 12) {
 } else {
   console.log("Good evening!");
 }
+
+// switch Statement
+
+let fruit = "Apple";
+
+switch (fruit) {
+  case "Banana":
+    console.log("Bananas are yellow");
+    break;
+  case "Apple":
+    console.log("Apples are red");
+    break;
+  default:
+    console.log("Unknown fruit");
+}
