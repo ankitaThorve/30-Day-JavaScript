@@ -51,3 +51,10 @@ console.log(1 < 1.2); // less than
 console.log(1 >= 1.2); // greater than or equal to
 
 console.log(1 <= 1.2); // less than or equal to
+
+// Logical Operators
+
+// && Logical AND
+// || Logical OR
+// ! Logical NOT
+// ?? Nullish coalescing
