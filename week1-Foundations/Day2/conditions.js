@@ -29,3 +29,14 @@ switch (fruit) {
 let age = 20;
 let status = age >= 18 ? "Adult" : "Minor";
 console.log(status);
+
+// Truthy vs Falsy values---
+// There are exactly eight falsy values that evaluate to false in a conditional context:
+// All other values are evaluated as truthy
+
+// false
+// 0 (and -0, 0n)
+// "" empty string
+// null
+// undefined
+// NaN
