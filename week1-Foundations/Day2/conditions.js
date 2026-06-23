@@ -40,3 +40,18 @@ console.log(status);
 // null
 // undefined
 // NaN
+
+// Error Handling Control Flow ----
+
+// Exceptions interrupt normal control flow. JavaScript uses the try...catch...finally statement
+
+try {
+  // Code that might throw an error
+  let result = riskyOperation();
+} catch (error) {
+  // Code to handle the error
+  console.error("An error occured: " + error.message);
+} finally {
+  // Code that always runs, regardless of an error
+  console.log("Cleanup Complete.");
+}
