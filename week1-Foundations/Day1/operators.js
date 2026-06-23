@@ -33,3 +33,21 @@ console.log(x); //multiplication assignment
 
 x /= y;
 console.log(x); //division assignment
+
+// Comparison / Relational Operators
+
+console.log(1 == 1.2); // loose equality
+
+console.log(1 === 1.2); // strict equality
+
+console.log(1 != 1.2); // loose inequality
+
+console.log(1 !== 1.2); // strict inequality
+
+console.log(1 > 1.2); // greater than
+
+console.log(1 < 1.2); // less than
+
+console.log(1 >= 1.2); // greater than or equal to
+
+console.log(1 <= 1.2); // less than or equal to
