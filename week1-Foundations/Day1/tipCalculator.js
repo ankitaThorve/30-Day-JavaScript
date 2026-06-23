@@ -1,3 +1,6 @@
+// Tip = Bill * Tip%100
+// Total Bill = Bill + Tip
+
 const billAmount = 50.0;
 const tipPercentage = 15;
 const numberOfPeople = 2;
