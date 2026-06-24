@@ -11,5 +11,5 @@ for (let i = 0; i < 3; i++) {
 let count = 0;
 while (count < 3) {
   console.log(count);
-  count++; 
+  count++; // Essential to avoid an infinite loop
 }
