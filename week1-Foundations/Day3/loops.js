@@ -13,3 +13,11 @@ while (count < 3) {
   console.log(count);
   count++; // Essential to avoid an infinite loop
 }
+
+// for...of loop
+// Advantage: Eliminates the need to track indices or manage counters manually
+
+const fruits = ["apple", "banana", "cherry"];
+for (const fruit of fruits) {
+  console.log(fruit);
+}
