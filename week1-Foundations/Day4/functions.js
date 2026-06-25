@@ -20,3 +20,11 @@ function setRole(user, role = "guest") {
 }
 
 setRole("Omkar");
+
+// Rest Parameter--
+
+function sumAll(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+sumAll(1, 2, 3, 4);
