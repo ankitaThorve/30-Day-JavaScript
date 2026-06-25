@@ -37,3 +37,12 @@ function displayProfile({ name, age }) {
 
 const userObj = { name: "Charlie", age: 30, city: "NY" };
 displayProfile(userObj);
+
+// Expected Count
+
+function func1() {}
+console.log(func1.length);
+
+function func2(a, b) {}
+console.log(func2.length);
+console.log(arguments.length);
