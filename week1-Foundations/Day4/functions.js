@@ -7,7 +7,7 @@ function greetUser(userName, message) {
   return `${message}, ${userName}`;
 }
 
-greetUser("ankita", "Hello");
+console.log(greetUser("ankita", "Hello"));
 
 // Parameters vs. Arguments: Parameters are the variable names listed in the function definition. Arguments are the real values passed when invoking it.
 // Passed by Value: Primitive parameters are passed by value. If you overwrite a parameter inside the function body, it will not affect any global or external variables.
@@ -19,7 +19,7 @@ function setRole(user, role = "guest") {
   return `${user} is logged in as a ${role}.`;
 }
 
-setRole("Omkar");
+console.log(setRole("Omkar"));
 
 // Rest Parameter--
 
@@ -27,4 +27,13 @@ function sumAll(...numbers) {
   return numbers.reduce((total, num) => total + num, 0);
 }
 
-sumAll(1, 2, 3, 4);
+console.log(sumAll(1, 2, 3, 4));
+
+// Destructuring Parameters
+
+function displayProfile({ name, age }) {
+  console.log(`${name} is ${age} years old.`);
+}
+
+const userObj = { name: "Charlie", age: 30, city: "NY" };
+displayProfile(userObj);
