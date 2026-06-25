@@ -13,3 +13,10 @@ greetUser("ankita", "Hello");
 // Passed by Value: Primitive parameters are passed by value. If you overwrite a parameter inside the function body, it will not affect any global or external variables.
 // Missing Arguments: If you don't supply an argument for a defined parameter, its internal value defaults to undefined
 
+// Default Parameter--
+
+function setRole(user, role = "guest") {
+  return `${user} is logged in as a ${role}.`;
+}
+
+setRole("Omkar");
