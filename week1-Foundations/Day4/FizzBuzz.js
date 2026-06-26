@@ -52,3 +52,17 @@ function customFizzBuzz(start, end, word1, divisor1, word2, divisor2) {
 // Executing with unique rules: 7 replaces with "Foo", 2 replaces with "Bar"
 
 console.log(customFizzBuzz(1, 10, "Foo", 7, "Bar", 2));
+
+// Arrow Function Syntax with Default Parameters---
+// Defaulting limit to 100 if omitted by the caller
+const modernFizzBuzz = (limitA = 100) => {
+  for (let i = 1; i <= limitA; i++) {
+    let str = "";
+    if (i % 3 === 0) str += "Fizz";
+    if (i % 5 === 0) str += "Buzz";
+    console.log(str || i);
+  }
+};
+
+console.log(modernFizzBuzz()); //Runs from 1 to 100 automatically
+console.log(modernFizzBuzz(20)); //Overrides default limit and runs from 1 to 20
