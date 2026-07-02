@@ -56,3 +56,18 @@ function toggleComplete(id) {
   }
   viewTasks();
 }
+
+// Delete task function - using filter()
+function deleteTask(id) {
+  const originalLength = todoList.length;
+
+  // .filter() keeps only the elements that do NOT match the target ID
+  todoList = todoList.filter((item) => item.id !== id);
+
+  if (todoList.length < originalLength) {
+    console.log(`🗑️ Removed task with ID: ${id}`);
+  } else {
+    console.log(`❌ Task with ID ${id} not found`);
+  }
+  viewTasks();
+}
