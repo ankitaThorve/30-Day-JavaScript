@@ -16,3 +16,23 @@ function addTask(taskName) {
   console.log(`✅ Added: ${taskName}`);
   viewTask();
 }
+
+// View task function - using map()
+function viewTasks() {
+  if (todoList.length === 0) {
+    console.log("📃Your to-do list is currently empty.");
+    return;
+  }
+  console.log("\n-----My ToDo List-----");
+
+  // .map() creates a new array of formatted strings for displaying
+  const formattedList = todoList.map((item) => {
+    const statusIcon = item.completed ? "🟢[DONE]" : "🔴[TODO]";
+    return `ID: ${item.id}: ${statusIcon} - ${item.task}`;
+  });
+
+  // Print each formatted string line by line
+  formattedList.forEach((line) => {
+    console.log("------------------\n");
+  });
+}
