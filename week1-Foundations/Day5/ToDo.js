@@ -14,7 +14,7 @@ function addTask(taskName) {
 
   todoList.push(newTask);
   console.log(`✅ Added: ${taskName}`);
-  viewTask();
+  viewTasks();
 }
 
 // View task function - using map()
@@ -35,4 +35,24 @@ function viewTasks() {
   formattedList.forEach((line) => {
     console.log("------------------\n");
   });
+}
+
+// Complete Task function - using map()
+function toggleComplete(id) {
+  let found = false;
+  // .map() updates the completed property for the matching ID
+  todoList = todoList.map((item) => {
+    if (item.id === id) {
+      found = true;
+      return { ...item, completed: !item.completed };
+    }
+    return item;
+  });
+
+  if (found) {
+    console.log(`🔄️ Toggled task status for ID: ${id}`);
+  } else {
+    console.log(`❌ Task with ID ${id} not found.`);
+  }
+  viewTasks();
 }
