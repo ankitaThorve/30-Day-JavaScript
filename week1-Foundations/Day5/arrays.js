@@ -23,3 +23,15 @@ const squared = numbers.map((num) => num * num);
 
 console.log(numbers);
 console.log(squared);
+
+// The filter() method creates a shallow copy of a portion of a given array, filtered down to only the elements that pass a specific conditional test.
+// Behavior: Like map(), it is non-mutating and returns a new array.
+// Mechanism: It runs a callback function for each element. If the callback returns a truthy value, that element is included in the new array; if it returns falsy, it is excluded.
+// Ideal Use Case: Removing unwanted items from a data collection based on specific criteria.
+
+const score = [12, 5, 8, 130, 54];
+// Filtering out numbers that are less than 10
+const bigScore = score.filter((score) => score >= 10);
+
+console.log(score);
+console.log(bigScore);
