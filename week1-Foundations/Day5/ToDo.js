@@ -71,3 +71,10 @@ function deleteTask(id) {
   }
   viewTasks();
 }
+
+// Clear completed task function - using filter()
+function clearCompleted() {
+  todoList = todoList.filter((item) => !item.completed);
+  console.log("🧹Cleared all completed tasks.");
+  viewTasks();
+}
