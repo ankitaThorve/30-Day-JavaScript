@@ -21,3 +21,8 @@ const animal = new Object({
   age: 1,
   eyesColor: "gray",
 });
+
+// Accessing properties
+// Dot notation-----
+
+console.log(user.name);
