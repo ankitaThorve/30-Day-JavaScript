@@ -33,3 +33,7 @@ let n2 = "lastName";
 
 let name = person[n1] + " " + person[n2];
 console.log(name);
+
+// Deleting property---
+delete person.age1;
+console.log(person);
