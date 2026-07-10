@@ -14,3 +14,10 @@ person.age1 = 28;
 person.eyeColor = "blue";
 
 console.log(person);
+
+// Using the new keyword ---- not recommended
+const animal = new Object({
+  name: "Sally",
+  age: 1,
+  eyesColor: "gray",
+});
