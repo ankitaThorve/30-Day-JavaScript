@@ -26,3 +26,10 @@ const animal = new Object({
 // Dot notation-----
 
 console.log(user.name);
+
+// Bracket notation -----
+let n1 = "firstName";
+let n2 = "lastName";
+
+let name = person[n1] + " " + person[n2];
+console.log(name);
