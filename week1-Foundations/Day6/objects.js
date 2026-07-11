@@ -37,3 +37,7 @@ console.log(name);
 // Deleting property---
 delete person.age1;
 console.log(person);
+
+// Check if a property exists------ in operator
+let result = "firstName" in person;
+console.log(result);
